@@ -12,6 +12,7 @@ const AddContact = () => {
       status: false,
     };
     addContact(newObj);
+    setInpValue("");
   }
 
   return (
@@ -23,6 +24,7 @@ const AddContact = () => {
         value={inpValue}
         onChange={(e) => setInpValue(e.target.value)}
       />
+
       <Button variant="warning" onClick={handleClick}>
         Add
       </Button>
